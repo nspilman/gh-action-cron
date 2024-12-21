@@ -2,7 +2,10 @@ name: Scheduled Hello World
 
 on:
   schedule:
-    - cron: '*/1 * * * *' # Runs every minute (adjust as needed)
+    # Runs every minute
+    - cron: '* * * * *'
+  # Optional: Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -28,6 +31,6 @@ jobs:
         with:
           commit_message: Update log file
           file_pattern: output.log
-          
+
 permissions:
   contents: write
