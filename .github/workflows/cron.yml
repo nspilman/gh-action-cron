@@ -2,8 +2,8 @@ name: Scheduled Hello World
 
 on:
   schedule:
-    # Runs every minute
-    - cron: '* * * * *'
+    # Runs every 15 minutes
+    - cron: '*/15 * * * *'
   # Optional: Allow manual trigger
   workflow_dispatch:
 
