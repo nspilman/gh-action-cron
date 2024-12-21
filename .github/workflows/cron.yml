@@ -28,3 +28,6 @@ jobs:
         with:
           commit_message: Update log file
           file_pattern: output.log
+          
+permissions:
+  contents: write
